@@ -1,0 +1,36 @@
+{
+  "name": "data.management-nodejs-integration.egnyte",
+  "version": "1.0.0",
+  "description": "Basic integration between Data Management API & Egnyte",
+  "dependencies": {
+    "@microsoft/microsoft-graph-client": "^1.0.0",
+    "body-parser": "*",
+    "bootstrap": "*",
+    "box-node-sdk": "*",
+    "cookie-parser": "*",
+    "express": "*",
+    "express-session": "*",
+    "forge-apis": "*",
+    "fs": "*",
+    "https": "*",
+    "jquery": "*",
+    "jstree": "*",
+    "moment": "*",
+    "passport-azure-ad": "^3.0.6",
+    "request": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adamenagy/data.management-nodejs-integration.egnyte"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node start.js",
+    "dev": "node start.js",
+    "nodemon": "nodemon start.js --ignore www/"
+  },
+  "author": "Adam Nagy (Forge Partner Development)",
+  "license": "MIT"
+}

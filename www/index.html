@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Autodesk Forge Integration with Onedrive</title>
+  <!-- Common packages: JQuery & Bootstrap -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/jstree/style.css"/>
+  <script language="JavaScript" src="/js/jquery.min.js"></script>
+  <script language="JavaScript" src="/js/bootstrap.min.js"></script>
+  <script language="JavaScript" src="/js/jstree.min.js"></script>
+  <script language="JavaScript" src="/js/moment.min.js"></script>
+  <script language="JavaScript" src="/js/notify.min.js"></script>
+  <!-- Autodesk Forge Viewer files
+  <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.min.css" type="text/css">
+  <script language="JavaScript" src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.min.js"></script>
+  <script language="JavaScript" src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
+  <!-- this project main script -->
+  <link rel="shortcut icon" href=/img/favicon.ico type=image/x-icon>
+  <link rel="stylesheet" href="/css/main.css"/>
+  <script language="JavaScript" src="/js/onedrive.js"></script>
+  <script language="JavaScript" src="/js/forge.data.management.js"></script>
+</head>
+<body>
+<!-- Fixed navbar by Bootstrap: https://getbootstrap.com/examples/navbar-fixed-top/ -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav left">
+      <li>
+        <a href="http://developer.autodesk.com" target="_blank">
+          <img alt="Autodesk Forge" src="/img/autodesk-forge.png" height="20">
+          Autodesk Forge
+        </a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- End of navbar -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="tooltip">Autodesk Hubs
+          <img src="/img/refresh.png" id="refreshAutodeskTree" style="vertical-align: top; cursor: pointer" title="Refresh Autodesk files" height="20"/>
+          <button id="loginAutodesk" style="float:right;" class="btn btn-xs btn-default">
+            <span id="loginAutodeskProfileImage">
+              <img src="/img/autodesk-logo.png" height="16" />
+            </span>
+            <span id="loginAutodeskText" title="Sign in with your Autodesk Account">Account</span>
+          </button>
+        </div>
+        <div id="myAutodeskFiles" class="foldertree">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="tooltip">OneDrive Folders in account
+          <input id="onedriveAccountName" value="autodesktesting" />
+          <img src="/img/refresh.png" id="refreshOnedriveTree" style="vertical-align: top; cursor: pointer" title="Refresh OneDrive files" height="20"/>
+          <button id="loginOnedrive" class="btn btn-xs btn-default" style="float:right;">
+            <span id="loginOnedriveProfileImage">
+              <img src="img/onedrive-logo.png" height="16" />
+            </span>
+            <span id="loginOnedriveText" title="Sign in with your OneDrive Account">Account</span>
+          </button>
+
+        </div>
+        <div id="myOnedriveFiles" class="foldertree">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <span>Right-click on <strong>Autodesk Hubs</strong> <span class="glyphicon glyphicon-time">Versions</span> to send to <strong>OneDrive</strong>, or on <strong>OneDrive Folders</strong> <span
+        class="glyphicon glyphicon-file">Files</span> to send to <strong>Autodesk</strong>.</span>
+  </div>
+</footer>
+</body>
+</html>

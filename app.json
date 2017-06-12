@@ -1,0 +1,37 @@
+{
+  "name": "Forge.Egnyte.Integration",
+  "description": "Basic integration between Forge & Egnyte",
+  "repository": "https://github.com/adamenagy/data.management-nodejs-integration.egnyte",
+  "logo": "https://avatars0.githubusercontent.com/u/8017462?v=3&s=200",
+  "keywords": [
+    "express",
+    "framework",
+    "autodesk",
+    "forge",
+    "template"
+  ],
+  "env": {
+    "FORGE_CLIENT_ID": {
+      "description": "Forge Client ID"
+    },
+    "FORGE_CLIENT_SECRET": {
+      "description": "Forge Client Secret"
+    },
+    "FORGE_CALLBACK_URL": {
+      "description": "Callback URL of your Forge app, required for 3-legged OAuth",
+      "value": "https://<<YOUR HEROKU APP NAME HERE>>.herokuapp.com/api/forge/callback/oauth"
+    },
+    "EGNYTE_CLIENT_ID": {
+      "description": "Egnyte Client ID"
+    },
+    "EGNYTE_CLIENT_SECRET": {
+      "description": "Egnyte Client Secret"
+    },
+    "EGNYTE_CALLBACK_URL": {
+      "description": "Redirect URI of your Egnyte app, required for 3-legged OAuth",
+      "value": "https://<<YOUR HEROKU APP NAME HERE>>.herokuapp.com/api/egnyte/callback/oauth"
+    }
+  },
+  "website": "https://developer.autodesk.com/",
+  "success_url": "/"
+}
