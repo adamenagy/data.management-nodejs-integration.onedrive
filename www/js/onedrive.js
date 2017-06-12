@@ -36,9 +36,8 @@ $(document).ready(function () {
 });
 
 function onedriveLogin() {
-    var onedriveAccountName = $('#onedriveAccountName').val();
     jQuery.ajax({
-        url: '/onedrive/authenticate?account=' + onedriveAccountName,
+        url: '/onedrive/authenticate',
         success: function (rootUrl) {
             location.href = rootUrl;
         }
